@@ -6,9 +6,9 @@ function cli() {
         .command('url', 'check the ulrs DOM depth')
         .command('depth', 'the depth of the check')
         .example('$0 --url=https://... --depth=100', 'check the DOM depth in the url')
-        .epilog('copyright 2016')
         .help('h')
         .alias('h', 'help')
+        .epilog('copyright 2016')
         .argv;
 };
 
