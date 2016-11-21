@@ -2,6 +2,8 @@
 
 'use strict';
 
+const yargs = require('yargs');
+
 function checkDepth() {
     let i = 1,
     sel = '* > *';
