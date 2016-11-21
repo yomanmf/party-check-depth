@@ -2,9 +2,9 @@
 Check DOM depth implementation in JavaScript
 
 # How to develop
-git clone git@github.com:yomanmf/party-check-depth.git
 ```bash
-cd stack
+git clone git@github.com:yomanmf/party-check-depth.git
+cd party-check-depth
 npm install
 npm install yargs
 ```
