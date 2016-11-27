@@ -9,10 +9,11 @@
   "author": "Alexander Savelyev",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^3.7.1"
+    "eslint": "^3.7.1",
+    "phantomjs": "^2.1.7"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yomanmf/party-check-depth.git"
-  } 
+  }
 }

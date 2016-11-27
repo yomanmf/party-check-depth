@@ -2,7 +2,18 @@
 
 'use strict';
 
+import system from 'system';
+import webPage from 'webpage';
+
+const page = webPage.create();
+
 const yargs = require('yargs');
+
+let url;
+
+url = system.args[1];
+
+
 
 /**
  * Checks DOM depth of the url page
