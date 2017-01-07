@@ -21,16 +21,30 @@ page.onConsoleMessage = function (msg) {
  * @param url - the url from cli
  */
 
-function checkDepth() {
-    let i = 1,
-    sel = '* > *';
-    while(document.querySelector(sel)) {
-        sel += ' > *';
-        i++;
-    }
-    return i;
-}
+page.open(url, function () {
+    const status = page.evaluate(function () {
 
+        function checkDepth() {
+            let i = 1,
+            sel = '* > *';
+            while(document.querySelector(sel)) {
+                sel += ' > *';
+                i++;
+            }
+            return i;
+        }
+    
+        a = checkDepth();
+        console.log(a);
+
+    }, depth);
+
+    phantom.exit(status);
+
+});
+
+
+/*
 a = checkDepth();
 if (a < 100) {
     console.log('тут должен быть process.exit(0)');
@@ -38,4 +52,4 @@ if (a < 100) {
 else { 
     console.log('тут должен быть process.exit(1)');
 }
-
+*/
