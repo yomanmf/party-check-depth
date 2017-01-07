@@ -8,9 +8,6 @@ const page = require('webpage').create();
 const url = system.args[1];
 const depth = system.args[2];
 
-url = system.args[1];
-
-
 
 /**
  * Checks DOM depth of the url page
