@@ -19,6 +19,7 @@ page.onConsoleMessage = function (msg) {
  * 
  * @function
  * @param url - the url from cli
+ * @param depth - the depth from cli
  */
 
 page.open(url, function () {
