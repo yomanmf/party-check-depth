@@ -20,7 +20,7 @@
     "shelljs": "^0.7.5",
     "valid-url": "^1.0.9",
     "yargs": "^6.6.0"
-  }
+  },
   "devDependencies": {
     "eslint": "^3.7.1",
     "pre-commit": "^1.2.2",
