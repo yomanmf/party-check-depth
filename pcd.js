@@ -2,11 +2,17 @@
 
 'use strict';
 
-const system = require('system');
-const page = require('webpage').create();
+import system from 'system';
+import webPage from 'webpage';
+
+const page = webPage.create();
 
 const url = system.args[1];
 const depth = system.args[2];
+
+page.onConsoleMessage = function (msg) {
+    console.log(msg);
+};
 
 /**
  * Checks DOM depth of the url page
