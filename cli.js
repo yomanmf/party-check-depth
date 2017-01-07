@@ -1,5 +1,10 @@
 #!/usr/bin/env node
 
+
+const binpath = require('binpath');
+const path = require('path');
+const sell = require('shelljs');
+
 'use strict';
 
 function cli() {  
