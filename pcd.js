@@ -2,10 +2,8 @@
 
 'use strict';
 
-import system from 'system';
-import webPage from 'webpage';
-
-const page = webPage.create();
+const system = require('system');
+const page = require('webpage').create();
 
 const yargs = require('yargs');
 
@@ -38,3 +36,4 @@ if (a < 100) {
 else { 
     console.log('тут должен быть process.exit(1)');
 }
+
