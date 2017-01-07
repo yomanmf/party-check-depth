@@ -2,17 +2,24 @@
   "name": "party-check-depth",
   "version": "0.0.1",
   "description": "Check DOM depth in JavaScript",
-  "main": "index.js",
+  "private": false,
+  "bin": "./babel/bin/cli.js",
+  "main": "pcd.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint ./",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "babel parsers --out-dir babel/parsers && babel bin --out-dir babel/bin"
   },
   "author": "Alexander Savelyev",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.18.0",
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
     "eslint": "^3.7.1",
-    "phantomjs-prebuilt": "^2.1.13"
+    "phantomjs-prebuilt": "^2.1.13",
+    "pre-commit": "^1.2.2",
+    "valid-url": "^1.0.9"
   },
   "repository": {
     "type": "git",
