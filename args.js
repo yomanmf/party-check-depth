@@ -6,3 +6,5 @@ import validUrl from 'valid-url';
 let url = argv.url;
 const depth = argv.depth;
 
+assert (url, 'url is expected to be entered');
+
