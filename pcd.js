@@ -5,9 +5,8 @@
 const system = require('system');
 const page = require('webpage').create();
 
-const yargs = require('yargs');
-
-let url;
+const url = system.args[1];
+const depth = system.args[2];
 
 url = system.args[1];
 
