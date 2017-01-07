@@ -8,3 +8,7 @@ const depth = argv.depth;
 
 assert (url, 'url is expected to be entered');
 
+if (url.indexOf('http') !== 0) {
+    url = `http://${url}`;
+}
+
