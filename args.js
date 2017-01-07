@@ -12,3 +12,6 @@ if (url.indexOf('http') !== 0) {
     url = `http://${url}`;
 }
 
+assert (validUrl(url), 'url is not valid');
+
+module.exports = { depth, url };
