@@ -1,10 +1,20 @@
 # Check DOM depth
 Check DOM depth implementation in JavaScript
 
-# How to develop
+# How to install
 ```bash
-git clone git@github.com:yomanmf/party-check-depth.git
-cd party-check-depth
-npm install
-npm install yargs
+npm install party-check-depth
 ```
+
+# How to check DOM depth of the page
+```bash
+$ pcd --url=yandex.ru
+```
+
+# How to check if the page has DOM depth more than value
+```bash
+$ pcd --url=yandex.ru --depth=10
+```
+
+
+
