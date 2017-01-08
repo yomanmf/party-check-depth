@@ -4,9 +4,8 @@
   "description": "Check DOM depth in JavaScript",
   "private": false,
   "bin": "./babel/bin/cli.js",
-  "main": "pcd.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint ./",
+    "lint": "eslint ./parsers && eslint ./bin",
     "prepublish": "babel parsers --out-dir babel/parsers && babel bin --out-dir babel/bin"
   },
   "author": "Alexander Savelyev",
@@ -28,5 +27,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yomanmf/party-check-depth.git"
-  }
+  },
+  "precommit": "lint"
 }
