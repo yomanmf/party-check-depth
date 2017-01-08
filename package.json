@@ -6,7 +6,8 @@
   "bin": "./babel/bin/cli.js",
   "scripts": {
     "lint": "eslint ./parsers && eslint ./bin",
-    "prepublish": "babel parsers --out-dir babel/parsers && babel bin --out-dir babel/bin"
+    "prepublish": "babel parsers --out-dir babel/parsers && babel bin --out-dir babel/bin",
+    "start": "babel-node --presets es2015 pcd.js"
   },
   "author": "Alexander Savelyev",
   "license": "MIT",
