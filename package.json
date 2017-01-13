@@ -22,10 +22,12 @@
     "yargs": "^6.6.0"
   },
   "devDependencies": {
-    "eslint": "^3.7.1"
+    "eslint": "^3.7.1",
+    "pre-commit": "^1.2.2"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yomanmf/party-check-depth.git"
-  }
+  },
+  "precommit": "lint"
 }
