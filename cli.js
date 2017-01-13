@@ -2,8 +2,6 @@
 
 'use strict';
 
-import {url, depth} from './args';
-
 import binPath from 'phantomjs-prebuilt';
 import path from 'path';
 import shell from 'shelljs';
